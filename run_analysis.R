@@ -49,3 +49,5 @@ data<-rbind(train_data,test_data)
 
 tidy data set with the average of each variable for each activity and each subject
 means = data %>% group_by(activity_label,subjects) %>% summarize_all(funs(mean))
+
+write.table(means, file = "./tidy_data.txt")
