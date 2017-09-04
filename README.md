@@ -1,9 +1,14 @@
 # Getting-and-Cleaning-Data-Course-Project
 
 
-The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+The following are the steps performed to produce the tidy data set
 
-The goal for this project is to clean up the training data and test data and to combine them to form a tidy data set.
-
-
+Download unzipped files
+Load required data sets (features, activity_labels, and training & test set)
+Only focus on measurements that contain Mean and Standard Deviation
+Rename the columns with the correct column names for both training and test data sets
+Merge the three files for training set into single file. Do the same for the test set
+Also for variable names, change the abbreviations into a more appropriate name (for example, t into time, f into frequency, etc)
+Product tidy data with the mean for all the measurements based on subjectID and activityID
+Write the data set as output
 
